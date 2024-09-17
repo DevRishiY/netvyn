@@ -167,8 +167,8 @@ const AWSIcon = () => {
 
       
       <div className="text-left p-6 mt-4">
-        <h1 className="text-white text-2xl font-bold mb-2">AWS Integration</h1>
-        <p className="text-gray-400 text-lg">integrate AWS and use seamlessly with us.</p>
+        <h1 className="text-white text-2xl font-bold mb-2">Up Always</h1>
+        <p className="text-gray-400 text-lg">we use quality leading providers to provide best uptime.</p>
       </div>
     </div>
   );
@@ -211,10 +211,10 @@ const BentoBox1 = () => {
           <div className="flex flex-col justify-between h-full">
             <div className="mb-4 px-6 mt-6">
               <div className="flex justify-between items-center mb-6 pb-2">
-                <h2 className="text-white/70 text-xl">Sales Data</h2>
+                <h2 className="text-white/70 text-xl">Cpu's Data</h2>
                 <div className="flex items-center">
                   <div className="h-1 bg-black w-8 rounded-lg"></div>
-                  <span className="ml-2 text-white/70 text-sm">Growth</span>
+                  <span className="ml-2 text-white/70 text-sm">Usage</span>
                 </div>
               </div>
               <div ref={chartRef} className="relative w-full mt-12" style={{ height: chartHeight }}>
@@ -266,8 +266,8 @@ const BentoBox1 = () => {
               </div>
             </div>
             <div className="text-left p-6 mt-4">
-              <h1 className="text-white text-2xl font-bold mb-2">Incredible Growth</h1>
-              <p className="text-white/70 text-lg">Fly through your tasks with rapid-fire keyboard shortcuts for everything. Literally everything.</p>
+              <h1 className="text-white text-2xl font-bold mb-2">Incredible Performance</h1>
+              <p className="text-white/70 text-lg">Fly through your tasks with rapid-fast ryzen cpu's for everything. Literally everything.</p>
             </div>
           </div>
         </CardWithEffect>
@@ -276,8 +276,8 @@ const BentoBox1 = () => {
             <div className="flex flex-col justify-center h-full">
               <LogoBeam />
               <div className="text-left p-6">
-                <h1 className="text-white text-2xl font-bold mb-2">Multiple Technologies</h1>
-                <p className="text-white/70 text-lg">Fly through your tasks with rapid-fire keyboard shortcuts for everything. Literally everything.</p>
+                <h1 className="text-white text-2xl font-bold mb-2">Multiple Addons</h1>
+                <p className="text-white/70 text-lg">Fly through your tasks with rapid-technologies built for you. Extensions suitable for you and your servers.</p>
               </div>
             </div>
           </CardWithEffect>

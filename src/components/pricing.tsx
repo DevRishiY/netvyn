@@ -16,7 +16,9 @@ interface PricingTabProps {
 
 export function PricingTab(props: PricingTabProps) {
   return (
-    <div className={`h-full `}>
+  
+    <div className={`h-full `}>  
+      <section id='pricing'>
       <div className="relative flex flex-col h-full p-6 rounded-2xl bg-black border border-white/30 shadow shadow-black/80">
         {props.popular && (
           <div className="absolute top-0 right-0 mr-6 -mt-4">
@@ -49,7 +51,7 @@ export function PricingTab(props: PricingTabProps) {
           })}
         </ul>
       </div>
-    </div>
+    </section> </div>
   )
 }
 
@@ -76,13 +78,14 @@ export default function PricingTable() {
         <PricingTab
           yearly={isAnnual}
           planName="Essential"
-          price={{ yearly: 29, monthly: 35 }}
-          planDescription="There are many variations available, but the majority have suffered."
+          price={{ yearly: 5, monthly: 8 }}
+          planDescription="Best plan tailored for small scale servers."
           features={[
-            'Unlimited placeholder texts',
-            'Consectetur adipiscing elit',
-            'Excepteur sint occaecat cupidatat',
-            'Officia deserunt mollit anim',
+            'RAM: 8gb',
+            '2 Cpu Cores @5GHz',
+            '20GB of disk',
+            'powered by ryzen cpu',
+            'free N Optimise',
           ]} />
 
         {/* Pricing tab 2 */}
@@ -90,33 +93,32 @@ export default function PricingTable() {
           yearly={isAnnual}
           popular={true}
           planName="Perform"
-          price={{ yearly: 49, monthly: 55 }}
-          planDescription="There are many variations available, but the majority have suffered."
+          price={{ yearly: 10, monthly: 12 }}
+          planDescription="There are many variations available, but the majority have used this."
           features={[
-            'Unlimited placeholder texts',
-            'Consectetur adipiscing elit',
-            'Excepteur sint occaecat cupidatat',
-            'Officia deserunt mollit anim',
-            'Predefined chunks as necessary',
+            'RAM: 16gb',
+            '5 Cpu Cores @5GHz',
+            '45GB of disk',
+            'powered by ryzen cpu',
+            'free N Optimise',
           ]} />
 
         {/* Pricing tab 3 */}
         <PricingTab
           yearly={isAnnual}
           planName="Enterprise"
-          price={{ yearly: 79, monthly: 85 }}
-          planDescription="There are many variations available, but the majority have suffered."
+          price={{ yearly: 17, monthly: 20 }}
+          planDescription="There are many variations available, but this one for large servers."
           features={[
-            'Unlimited placeholder texts',
-            'Consectetur adipiscing elit',
-            'Excepteur sint occaecat cupidatat',
-            'Officia deserunt mollit anim',
-            'Predefined chunks as necessary',
-            'Free from repetition',
+            'RAM: 42GB',
+            '8 Cpu Cores @5GHz',
+            '80GB of disk expandable',
+            'powered by ryzen cpu',
+            'free N Optimise',
           ]} />
 
       </div>
 
-    </div>
+   </div>
   )
 }
