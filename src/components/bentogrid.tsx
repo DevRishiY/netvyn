@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const logos = [
@@ -16,7 +17,7 @@ const LogoBeam = () => {
     <div className="flex items-center justify-center min-h-52">
       <div className="relative flex items-center">
         <div className="bg-[#000] border border-white/30  rounded-2xl flex items-center justify-center w-14 h-14 p-4">
-          <img src={logos[0]} alt="Logo 1" className="filter invert brightness-0" />
+          <Image src={logos[0]} alt="Logo 1" className="filter invert brightness-0" />
         </div>
         <div className="relative" style={{ width: `${lineWidth}px`, height: `${lineHeight}px`, backgroundColor: '#FFFFFF', overflow: 'hidden' }}>
           <motion.div
@@ -33,7 +34,7 @@ const LogoBeam = () => {
           />
         </div>
         <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
-          <img src={logos[1]} alt="Logo 2" className="filter invert brightness-0" />
+          <Image src={logos[1]} alt="Logo 2" className="filter invert brightness-0" />
           <motion.div
             className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
             initial={{ x: '-100%' }}
@@ -62,7 +63,7 @@ const LogoBeam = () => {
           />
         </div>
         <div className="bg-black border border-white/30 rounded-2xl flex items-center justify-center w-14 h-14 p-4">
-          <img src={logos[2]} alt="Logo 3" className="filter invert brightness-0" />
+          <Image src={logos[2]} alt="Logo 3" className="filter invert brightness-0" />
         </div>
       </div>
     </div>
@@ -119,7 +120,7 @@ const AWSIcon = () => {
     <div className="flex flex-col justify-center h-full items-center relative">
          <div className="flex flex-row gap-8 justify-center h-full items-center relative">
          <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
-          <img src={logos[0]} alt="Logo 2" className="filter invert brightness-0" />
+          <Image src={logos[0]} alt="Logo 2" className="filter invert brightness-0" />
           <motion.div
             className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
             initial={{ x: '-100%' }}
@@ -134,7 +135,7 @@ const AWSIcon = () => {
           />
         </div>
         <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
-          <img src={logos[1]} alt="Logo 2" className="filter invert brightness-0" />
+          <Image src={logos[1]} alt="Logo 2" className="filter invert brightness-0" />
           <motion.div
             className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
             initial={{ x: '-100%' }}
@@ -149,7 +150,7 @@ const AWSIcon = () => {
           />
         </div>
         <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
-          <img src={logos[2]} alt="Logo 2" className="filter invert brightness-0" />
+          <Image src={logos[2]} alt="Logo 2" className="filter invert brightness-0" />
           <motion.div
             className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
             initial={{ x: '-100%' }}
@@ -211,7 +212,7 @@ const BentoBox1 = () => {
           <div className="flex flex-col justify-between h-full">
             <div className="mb-4 px-6 mt-6">
               <div className="flex justify-between items-center mb-6 pb-2">
-                <h2 className="text-white/70 text-xl">Cpu's Data</h2>
+                <h2 className="text-white/70 text-xl">Cpu Data</h2>
                 <div className="flex items-center">
                   <div className="h-1 bg-black w-8 rounded-lg"></div>
                   <span className="ml-2 text-white/70 text-sm">Usage</span>
@@ -267,7 +268,7 @@ const BentoBox1 = () => {
             </div>
             <div className="text-left p-6 mt-4">
               <h1 className="text-white text-2xl font-bold mb-2">Incredible Performance</h1>
-              <p className="text-white/70 text-lg">Fly through your tasks with rapid-fast ryzen cpu's for everything. Literally everything.</p>
+              <p className="text-white/70 text-lg">Fly through your tasks with rapid-fast ryzen cpus for everything. Literally everything.</p>
             </div>
           </div>
         </CardWithEffect>
